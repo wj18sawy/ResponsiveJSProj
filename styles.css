@@ -553,3 +553,17 @@ background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, F
     transition: 0.3s ease-in;
     cursor: pointer;
 }
+
+@media screen and (max-width:1300px){
+    .services__wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:768px){
+    .services__wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer CSS */
