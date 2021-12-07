@@ -44,3 +44,15 @@ const highlightMenu = () => {
 
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
+
+// Close mobile nav menu when selecting a section
+const hideMobileMenu = () => {
+    const menuBars = document.querySelector('.is-active');
+    if(window.innerWidth < 960 && menuBars){
+        menu.classList.toggle('is-active');
+        menuLinks.classList.remove('active');
+    }
+}
+
+menuLinks.addEventListener('click', hideMobileMenu);
+navLogo.addEventListener('click', hideMobileMenu);
